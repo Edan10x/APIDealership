@@ -7,11 +7,11 @@ namespace APIDealership.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class VehicleControllor : Controller
+    public class VehicleController : Controller
     {
         private readonly IVehicleRepository _repository;
 
-        public VehicleControllor(IVehicleRepository repository)
+        public VehicleController(IVehicleRepository repository)
         {
             _repository = repository;
         }
@@ -22,7 +22,7 @@ namespace APIDealership.Controllers
             var vehicle = await _repository.Get(id);
             return vehicle;
         }
-
+        
         [HttpPost(Name = "CreateVehicle")]
         public async Task<IActionResult?> Create([FromBody] CreateVehicleRequest request)
         {

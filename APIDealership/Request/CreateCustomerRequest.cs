@@ -1,16 +1,14 @@
-﻿namespace APIDealership.Models
+﻿namespace APIDealership.Request
 {
-    public class Customer
+    public class CreateCustomerRequest
     {
-        public int Id { get; set; }
 
         public string? FirstName { get; set; }
 
         public string? LastName { get; set; }
-        
+
         public int VehicleId { get; set; }
 
         public int DealershipId { get; set; }
     }
-    
 }

@@ -13,7 +13,6 @@
 
         public string? Color { get; set; }
 
-        // i want to generate a uniqe vin for each car
         public string? VinNumber { get; set; }
 
         public int Price { get; set; }

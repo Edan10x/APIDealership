@@ -21,6 +21,7 @@ internal class Program
         //will register the class to the frame work for every class that we want to inject to the constructer
         builder.Services.AddTransient<IDealershipRepository, DealershipRepository>();
         builder.Services.AddTransient<IVehicleRepository, VehicleRepository>();
+        builder.Services.AddTransient<ICustomerRepository, CustomerRepository>();
 
         // Establish the connection to the tables
         var cs = @"Server=DESKTOP-MASQELN\EDANROSENSQL;Database=DealershipDb;Trusted_Connection=True;";
