@@ -1,9 +1,7 @@
-﻿namespace APIDealership.Models
+﻿namespace APIDealership.Request
 {
-    public class Inventory
+    public class CreateInventoryRequestcs
     {
-        public int Id { get; set; }
-
         public int Quantity { get; set; }
 
         public int VehicleId { get; set; }

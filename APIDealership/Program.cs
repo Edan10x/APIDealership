@@ -22,6 +22,7 @@ internal class Program
         builder.Services.AddTransient<IDealershipRepository, DealershipRepository>();
         builder.Services.AddTransient<IVehicleRepository, VehicleRepository>();
         builder.Services.AddTransient<ICustomerRepository, CustomerRepository>();
+        builder.Services.AddTransient<IInventoryRepository, InventoryRepository>();
 
         // Establish the connection to the tables
         var cs = @"Server=DESKTOP-MASQELN\EDANROSENSQL;Database=DealershipDb;Trusted_Connection=True;";
